@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <title>WorkOutSide</title>
+  <meta charset = "UTF-8" />
+  <style>
+    #pano {
+     	position: relative;
+     	left: 2px;
+    	height: 400px;
+    	max-width: 500px;
+    	right: auto;
+    	margin-bottom: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+	<h1>Find Bars</h1>
+	<h2>Zoom in to see pull up bars.</h2>
+	<element onclick="load_street.js">
+
+	<div id="pano">
+		<script
+		    type="text/javascript"
+		    src="load_street.js"></script>
+		<script async defer
+		    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDexiVRX0RwtG-rt7NBLgazRdHLTZJMgwE&callback=streetView">
+	    </script>
+	</div>
+
+	<form action="path.html">
+    	<input type="submit" value="View Path" />
+	</form>
+
+</body>
+
+</html>
