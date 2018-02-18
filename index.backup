@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <title>WorkOutSide</title>
+  <meta charset = "UTF-8" />
+  <style>
+     #map {
+      height: 400px;
+      width: 100%;
+     }
+  </style>
+
+
+</head>
+<body>
+  <h1>Work Out Side</h1>
+  <p>
+    <img  src = "img/workout.jpg"
+          alt = "Picture of a pull up bars" />
+
+  </p>
+  <h2>It's Saturday afternoon. You woke up late and now you need to work out</h2>
+  <p>
+   to make up for all those margaritas you drank last night. Or you already squeezed in an early morning workout and your arms are feeling restless. Maybe you've never done a pull up but you are curious. This website will help your satisfy your desires for pull ups and the great outdoors. Who needs a gym when you can Work Out Side?
+  </p>
+
+  <div id="map"></div>
+  <script>
+    function initMap() {
+      var uluru = {lat: 33.764019, lng: -118.183716};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+    }
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDexiVRX0RwtG-rt7NBLgazRdHLTZJMgwE&callback=initMap">
+  </script>
+
+</body>
+</html>

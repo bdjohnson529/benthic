@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <title>WorkOutSide</title>
+  <meta charset = "UTF-8" />
+  <style>
+    #map {
+     	position: relative;
+     	left: 2px;
+    	height: 400px;
+    	max-width: 500px;
+    	right: auto;
+    	margin-bottom: 20px;
+    }
+    #street {
+     	position: relative;
+     	left: 2px;
+    	height: 400px;
+    	max-width: 500px;
+    	right: auto;
+    	margin-bottom: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+ 	<h1>Find Bars</h1>
+	<h2>Let's find some pull up bars near you.</h2>
+
+	<div id="map">
+		<script
+		    type="text/javascript"
+		    src="load_map.js"></script>
+		<script async defer
+		    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDexiVRX0RwtG-rt7NBLgazRdHLTZJMgwE&callback=initMap">
+	    </script>
+	</div>
+
+</body>
+
+</html>

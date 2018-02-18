@@ -8,7 +8,7 @@ function streetView() {
       pov: {
         heading: 180,
         pitch: 0,
-        zoom: 2
+        zoom: 4
       }
   });
 
